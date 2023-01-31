@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    android:paddingStart="2dp"
+    android:paddingLeft="2dp"
+    android:paddingTop="2dp"
+    android:paddingEnd="2dp"
+    android:paddingRight="2dp"
+    android:paddingBottom="2dp"
+    tools:context=".ResultFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        tools:context=".ResponseActivity">
+
+        <TextView
+            android:id="@+id/titlescheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="SCHEME"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textscheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titlescheme" />
+
+        <TextView
+            android:id="@+id/titletype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="8dp"
+            android:text="Type"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/titlescheme"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="@+id/titletype"
+            app:layout_constraintTop_toBottomOf="@+id/titletype" />
+
+        <TextView
+            android:id="@+id/titleBank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Банк:"
+            app:layout_constraintStart_toEndOf="@+id/textType"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textBankName"
+            android:layout_width="147dp"
+            android:layout_height="79dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="@+id/titleBank"
+            app:layout_constraintTop_toBottomOf="@+id/titleBank" />
+
+        <TextView
+            android:id="@+id/textBankPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textColor="#03A9F4"
+            android:textColorLink="#2196F3"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="@+id/textBankUrl"
+            app:layout_constraintTop_toBottomOf="@+id/textBankUrl" />
+
+        <TextView
+            android:id="@+id/textBankUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="TextView"
+            android:textColor="#2196F3"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="@+id/textBankCIty"
+            app:layout_constraintTop_toBottomOf="@+id/textBankCIty" />
+
+        <TextView
+            android:id="@+id/textBankCIty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textColor="#03A9F4"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="@+id/textBankName"
+            app:layout_constraintTop_toBottomOf="@+id/textBankName" />
+
+        <TextView
+            android:id="@+id/titleBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:text="Brand"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textscheme" />
+
+        <TextView
+            android:id="@+id/textBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="@+id/titleBrand"
+            app:layout_constraintTop_toBottomOf="@+id/titleBrand" />
+
+        <TextView
+            android:id="@+id/titlePrepaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Prepaid"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@+id/titletype"
+            app:layout_constraintTop_toBottomOf="@+id/textType" />
+
+        <TextView
+            android:id="@+id/textPrepaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="@+id/titlePrepaid"
+            app:layout_constraintTop_toBottomOf="@+id/titlePrepaid" />
+
+        <TextView
+            android:id="@+id/titleCardNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="CardNumber"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textBrand" />
+
+        <TextView
+            android:id="@+id/titleCardNumberLenght"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Lenght"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@+id/titleCardNumber"
+            app:layout_constraintTop_toBottomOf="@+id/titleCardNumber" />
+
+        <TextView
+            android:id="@+id/textCardNumberLenght"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="@+id/titleCardNumberLenght"
+            app:layout_constraintTop_toBottomOf="@+id/titleCardNumberLenght" />
+
+        <TextView
+            android:id="@+id/titleCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="112dp"
+            android:text="Страна:"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textBankPhone" />
+
+        <TextView
+            android:id="@+id/titleCardNumberLunght"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:text="Lunght"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/titleCardNumberLenght"
+            app:layout_constraintTop_toTopOf="@+id/titleCardNumberLenght" />
+
+        <TextView
+            android:id="@+id/textCardNumberLunghr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="@+id/titleCardNumberLunght"
+            app:layout_constraintTop_toBottomOf="@+id/titleCardNumberLunght" />
+
+        <TextView
+            android:id="@+id/textCountryEmoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toStartOf="@+id/titleCountry"
+            app:layout_constraintTop_toBottomOf="@+id/titleCountry" />
+
+        <TextView
+            android:id="@+id/textCountryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:text="TextView"
+            android:textColor="#03A9F4"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toEndOf="@+id/textCountryEmoji"
+            app:layout_constraintTop_toTopOf="@+id/textCountryEmoji" />
+
+        <TextView
+            android:id="@+id/titleLatitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="(Latitude:"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_nav"
+            app:layout_constraintTop_toBottomOf="@+id/textCountryEmoji" />
+
+        <TextView
+            android:id="@+id/textCountryLatitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="@+id/titleLatitude"
+            app:layout_constraintStart_toEndOf="@+id/titleLatitude"
+            app:layout_constraintTop_toTopOf="@+id/titleLatitude" />
+
+        <TextView
+            android:id="@+id/titleCountryLongitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=",longitude:"
+            app:layout_constraintStart_toEndOf="@+id/textCountryLatitude"
+            app:layout_constraintTop_toTopOf="@+id/textCountryLatitude" />
+
+        <TextView
+            android:id="@+id/textCountryLongitude"
+            android:layout_width="33dp"
+            android:layout_height="19dp"
+            android:text="TextView"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toEndOf="@+id/titleCountryLongitude"
+            app:layout_constraintTop_toTopOf="@+id/titleCountryLongitude" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="28dp"
+            android:layout_height="20dp"
+            android:text=")"
+            app:layout_constraintStart_toEndOf="@+id/textCountryLongitude"
+            app:layout_constraintTop_toTopOf="@+id/textCountryLongitude" />
+
+        <TextView
+            android:id="@+id/textBin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textColor="#4CAF50"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="@+id/textCountryEmoji" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="BIN:"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="@+id/textCardNumberLenght"
+            app:layout_constraintTop_toTopOf="@+id/titleCountry" />
+
+        <Button
+            android:id="@+id/btn_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Навигация"
+            app:layout_constraintStart_toStartOf="@+id/textBin"
+            app:layout_constraintTop_toBottomOf="@+id/textBin" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

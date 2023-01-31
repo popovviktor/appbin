@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    android:id="@+id/id_draw">
+        <item android:title="@string/textCategory1">
+                <menu>
+                        <item android:title="@string/search"
+                            android:id="@+id/id_search"
+                            android:icon="@drawable/ic_search"/>
+                        <item android:title="@string/history"
+                            android:id="@+id/id_history"
+                            android:icon="@drawable/ic_history"/>
+                        <item android:title="@string/clearstr"
+                                android:id="@+id/id_clear"
+                                android:icon="@drawable/ic_logo_header_clear"/>
+                </menu>
+        </item>
+
+
+</menu>
